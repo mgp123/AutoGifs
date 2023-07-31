@@ -1,6 +1,6 @@
 from subprocess import check_output, call
 import os
-
+import subprocess
 import urllib.request
 
 video_path=None
@@ -29,7 +29,7 @@ class GifConfig:
         return float(s)
     
     def put_on_video_at(self,timestamp:float, out_path:str="output.mp4", update_video_path=True ) -> None:
-        call(f"bash add_gif.sh {video_path} {self.gif_path} {timestamp} temp.mp4", shell=True)
+        call(f"bash add_gif.sh {video_path} {self.gif_path} {timestamp} temp.mp4", shell=True, stdout=subprocess.DEVNULL)
         
         # this thingy is to avoid ffmpeg in place errors
         os.remove(out_path)
