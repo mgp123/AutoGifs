@@ -2,7 +2,7 @@
 AutoGifs is a small script that automatically adds GIFs to a video, corresponding to what the speaker is saying. It was hacked in more or less an afternoon, so it's pretty bare bones. AutoGifs is not meant to be the next groundbreaking technology or a high-end video production tool. It's just a small thing
 
 ## An example
-![](sample/output.mp4)
+![](https://github.com/mgp123/AutoGifs/raw/master/sample/output.mp4)
 
 
 ## How It Works
