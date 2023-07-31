@@ -15,8 +15,8 @@ if __name__ == "__main__":
     print("Generating transciption...")
     segments = transcribe(video_path)
     print("Loading databse...")
-    gifs_database = faiss.read_index("local/gifs_dtb.index")
-    gifs_urls = pd.read_table("local/urls.csv", index_col=False)
+    gifs_database = faiss.read_index("data/gifs_dtb.index")
+    gifs_urls = pd.read_table("data/urls.csv", index_col=False)
 
     transcption_texts = list(map(lambda x: x["text"], segments))
     model = SentenceTransformer('all-MiniLM-L6-v2')
