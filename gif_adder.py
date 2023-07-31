@@ -32,7 +32,8 @@ class GifConfig:
         call(f"bash add_gif.sh {video_path} {self.gif_path} {timestamp} temp.mp4", shell=True, stdout=subprocess.DEVNULL)
         
         # this thingy is to avoid ffmpeg in place errors
-        os.remove(out_path)
+        if os.path.exists(out_path):
+            os.remove(out_path)
         os.rename("temp.mp4", out_path) 
         
         if update_video_path:
