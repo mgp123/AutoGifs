@@ -1,4 +1,5 @@
 
+import sys
 from gif_adder import GifConfig, set_editing_video
 from transcribe import transcribe
 import pandas as pd
@@ -9,7 +10,7 @@ import torch
 MAXIMUN_ACCEPTED_DISTANCE = 1.3
 
 if __name__ == "__main__":
-    video_path = "woody.mp4"
+    video_path = sys.argv[1]
     set_editing_video(video_path)
     print("Generating transciption...")
     segments = transcribe(video_path)
