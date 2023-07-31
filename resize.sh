@@ -1,0 +1,1 @@
+ffmpeg -i $1 -filter:v scale=256:-1 -c:a copy $2
