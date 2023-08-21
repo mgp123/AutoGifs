@@ -4,7 +4,9 @@ AutoGifs is a small script that automatically adds GIFs to a video, correspondin
 ## An example
 A quick example of the results can be seen [here](https://github.com/mgp123/AutoGifs/raw/master/sample/output.mp4)
 
-https://github.com/mgp123/AutoGifs/raw/master/sample/output.mp4
+
+https://github.com/mgp123/AutoGifs/assets/43388395/cb9dcd09-9090-4e8e-8a4a-d4c7efe0d1e8
+
 
 ## How It Works
 1. **Transcription with Whisper**: AutoGifs utilizes the powerful `whisper` library to transcribe the audio content of the video.
